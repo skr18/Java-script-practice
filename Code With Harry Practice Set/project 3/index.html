@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="time.js"></script>
+    <style>
+        .bulb{
+            background-color: yellow;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 250px; width: 250px;align-items: center;justify-content: center;" , class="bulb">
+       <!-- <span>I am bulb</span>  -->
+    </div>
+
+    <script>
+        let a = document.getElementsByTagName('div')
+        // console.log(a[0])
+        // a[0].style.backgroundColor='red';
+            setInterval(() => {
+                a[0].classList.toggle('bulb')
+            }, 500);
+    </script>
+</body>
+</html>
